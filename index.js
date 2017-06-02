@@ -4,7 +4,7 @@ var app = express();
 
 // Tell express where to find static assets
 var path = require('path');
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 /* Routes */
 var routes = require('./routes');
